@@ -1,0 +1,12 @@
+.MMM-BrawlStars td {
+	padding-left: 6px;
+	padding-right: 6px;
+}
+
+.MMM-BrawlStars .header-row {
+	font-weight: bold;
+}
+
+.MMM-BrawlStars .stats-row {
+	color: #fff;
+}

@@ -1,0 +1,23 @@
+{
+	"name": "MMM-BrawlStars",
+	"version": "1.0.0",
+	"description": "A MagicMirror2 module that shows Brawl Stars players' stats.",
+	"keywords": [
+		"magic mirror",
+		"brawl stars"
+	],
+	"homepage": "https://github.com/retroflex/MMM-BrawlStars#readme",
+	"bugs": {
+		"url": "https://github.com/retroflex/MMM-BrawlStars/issues"
+	},
+	"license": "MIT",
+	"author": "Johan Persson",
+	"main": "MMM-BrawlStars.js",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/retroflex/MMM-BrawlStars"
+	},
+	"dependencies": {
+		"request-promise": "^4.2.4"
+	}
+}

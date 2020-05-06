@@ -8,7 +8,7 @@
 const NodeHelper = require('node_helper');
 const rp = require('request-promise');
 
-const baseURL = 'https://brawlapi.cf/api/player?tag=';
+const baseURL = 'https://api.starlist.pro/v1/player?tag=';
 
 module.exports = NodeHelper.create({
 	start: function() {

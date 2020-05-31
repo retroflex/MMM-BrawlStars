@@ -21,9 +21,9 @@ module.exports = NodeHelper.create({
 	extractStats: function(json) {
 		let totalVictories = 0;
 
-		if (json.trophies != null)              totalVictories += json.trophies;
-		if (json.trophies != null)  totalVictories += json.trophies;
-		if (json.trophies != null)   totalVictories += json.trophies;
+		if (json.trophies != null)              totalVictories += json.3vs3Victories;
+		if (json.trophies != null)  totalVictories += json.soloVictories;
+		if (json.trophies != null)   totalVictories += json.duoVictories;
 
 		const stats = { username: json.name,
 		                level: json.expLevel,

@@ -98,7 +98,7 @@ Module.register('MMM-BrawlStars', {
 		this.sendSocketNotification('GET_STATS', { identifier: this.identifier,
 		                                           apiToken: this.config.apiToken,
 		                                           userTags: this.config.userTags,
-		                                           sortBy: this.config.sortBy} );
+												   sortBy: this.config.sortBy} );
 
 		// Make sure stats are reloaded at user specified interval.
 		let interval = Math.max(this.config.fetchInterval, 1000);  // In millisecs. < 1 min not allowed.

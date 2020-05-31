@@ -8,7 +8,7 @@
 const NodeHelper = require('node_helper');
 const rp = require('request-promise');
 
-const baseURL = 'https://brawlapi.cf/api/player?tag=';
+const baseURL = 'https://api.brawlstars.com/v1/players/%23';
 
 module.exports = NodeHelper.create({
 	start: function() {
@@ -21,9 +21,9 @@ module.exports = NodeHelper.create({
 	extractStats: function(json) {
 		let totalVictories = 0;
 
-		if (json.victories != null)              totalVictories += json.victories;
-		if (json.soloShowdownVictories != null)  totalVictories += json.soloShowdownVictories;
-		if (json.duoShowdownVictories != null)   totalVictories += json.duoShowdownVictories;
+		if (json.trophies != null)              totalVictories += json.trophies;
+		if (json.trophies != null)  totalVictories += json.trophies;
+		if (json.trophies != null)   totalVictories += json.trophies;
 
 		const stats = { username: json.name,
 		                level: json.expLevel,
@@ -43,7 +43,7 @@ module.exports = NodeHelper.create({
 		for (let i = 0; i < userTags.length; ++i) {
 			const userURL = baseURL + userTags[i];
 			const options = {uri: userURL,
-			                 headers: { Authorization: payload.apiToken }};
+			                 headers: { Authorization: "Bearer " + payload.apiToken }};
 			promises.push(rp(options));
 		}
 

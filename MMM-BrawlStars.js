@@ -24,7 +24,8 @@ Module.register('MMM-BrawlStars', {
 	getTranslations: function () {
 		return {
 			en: 'translations/en.json',
-			sv: 'translations/sv.json'
+                        sv: 'translations/sv.json',
+                        fr: 'translations/fr.json'
 		}
 	},
 

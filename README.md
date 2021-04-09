@@ -1,7 +1,7 @@
 # MMM-BrawlStars
 A [MagicMirror²](https://github.com/MichMich/MagicMirror) module that shows player stats (level, trophies and victories) for Supercell's mobile game [Brawl Stars](https://supercell.com/en/games/brawlstars/). The victories shown are the total from all different game modes.
 
-The stats are fetched from [BrawlAPI](https://docs.brawlapi.cf) (the unofficial Brawl Stars API).
+The stats are fetched from the [Official Brawl Stars Api](https://developer.brawlstars.com/#/) (The only downside with that is you must have a static ip adress or update your ip adress when it changes).
 
 ![screenshot](https://user-images.githubusercontent.com/25268023/57482419-dbd6c800-72a4-11e9-849c-42d6872c0b24.png)
 
@@ -32,7 +32,7 @@ The stats are fetched from [BrawlAPI](https://docs.brawlapi.cf) (the unofficial 
 # Configuration
 | Option                        | Description
 | ------------------------------| -----------
-| `apiToken`                    | Your personal API token. [See here](https://docs.brawlapi.cf/#/authentication?id=getting-the-api-token) how to get one.<br />**Default value:** YOURAPITOKEN (does not work obviously)
+| `apiToken`                    | Your personal API token. [See here](ttps://developer.brawlstars.com/#/) how to get one.<br />**Default value:** YOURAPITOKEN (does not work obviously)
 | `showLevel`                   | Whether to show column with the user's level.<br />**Default value:** true
 | `showTrophies`                | Whether to show column with the user's current number of trophies.<br />**Default value:** true
 | `showTotalVictories`          | Whether to show column with the user's total number of victories.<br />**Default value:** true
